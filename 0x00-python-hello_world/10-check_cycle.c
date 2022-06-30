@@ -10,21 +10,21 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *mbuzi, *kondoo;
+	listint_t *william, *leo;
 
 	if (list == NULL || list->next == NULL)
 		return (0);
 
-	mbuzi = list->next;
-	kondoo = list->next->next;
+	william = list->next;
+	leo = list->next->next;
 
-	while (mbuzi && kondoo && kondoo->next)
+	while (william && leo && leo->next)
 	{
-		if (mbuzi == kondoo)
+		if (william == leo)
 			return (1);
 
-		mbuzi = mbuzi->next;
-		kondoo = kondoo->next->next;
+		william = leo->next;
+		leo = leo->next->next;
 	}
 
 	return (0);
