@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-for letter in range(97, 123):
-    if chr(letter) is not 'q' and chr(letter) is not 'e':
-        print("{}".format(chr(letter)), end="")
+#for a in range(ord('a'), ord('z') + 1):
+for a in range(97, 123):
+    if chr(a) != "q" and chr(a) != "e":
+        print("{}".format(chr(a)), end="")
